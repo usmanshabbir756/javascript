@@ -21,7 +21,23 @@
 // car[select]=2020;
 // console.log(car);
 
-// array
-let carCompany = ['hona','bentlay','audi'];
-carCompany[3]='kia';
-console.log(carCompany);
+// // array
+// let carCompany = ['hona','bentlay','audi'];
+// carCompany[3]='kia';
+// console.log(carCompany);
+
+//function
+//perform task
+function greet(name , lastName){
+    console.log('hello ' + name + ' ' + lastName);
+}
+greet('usman','shabbir');
+// calculate something
+function area(number){
+    return number*number;
+}
+let square=area(9);
+console.log(square);
+
+
+
