@@ -9,15 +9,19 @@
 // const amount=12;
 // console.log(amount);
 
-//object
-let car={
-    color: 'black',
-    model: 2022
-};
-// dot notation
-car.color='red';
-// bracket notion
-let select='model';
-car[select]=2020;
-console.log(car);
+// //object
+// let car={
+//     color: 'black',
+//     model: 2022
+// };
+// // dot notation
+// car.color='red';
+// // bracket notion
+// let select='model';
+// car[select]=2020;
+// console.log(car);
 
+// array
+let carCompany = ['hona','bentlay','audi'];
+carCompany[3]='kia';
+console.log(carCompany);
