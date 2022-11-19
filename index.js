@@ -26,18 +26,82 @@
 // carCompany[3]='kia';
 // console.log(carCompany);
 
-//function
-//perform task
-function greet(name , lastName){
-    console.log('hello ' + name + ' ' + lastName);
-}
-greet('usman','shabbir');
-// calculate something
-function area(number){
-    return number*number;
-}
-let square=area(9);
-console.log(square);
+// //function
+// //perform task
+// function greet(name , lastName){
+//     console.log('hello ' + name + ' ' + lastName);
+// }
+// greet('usman','shabbir');
+// // calculate something
+// function area(number){
+//     return number*number;
+// }
+// let square=area(9);
+// console.log(square);
 
+
+//operator
+
+//arithmatic
+// + , - , * , / 
+let num=2;
+let num2 =8;
+let sum=num+num2;
+console.log(sum);
+
+// assignment operator
+// = , +=
+let num1=2;
+num1 +=8;
+console.log(num1);
+
+//copmarison < > <= >=
+let y=10;
+console.log(y<10);
+
+
+//Equality operator
+let x=10;
+//strong equality(type + value)
+console.log(x===10);
+console.log(x==='10'); //false
+//lose equality(value)
+console.log(x=='10'); //true
+
+//ternary operator
+let points=90;
+let value= points>100 ? 'gold' : 'silver';
+console.log(value);
+
+//Logical operator && || !
+let a=false;
+let b=true;
+let num4=a&&b;
+let num5=!num4;
+console.log(num4);
+console.log(num5);
+console.log(a || b);
+
+//logical operator non boolean
+//falsy (false)
+// NaN
+// undefined
+// null
+// 0
+// false
+// ''
+console.log(false || 'usman');
+console.log(false || 1);
+
+
+//Swapping
+let n1=5;
+let n2=9;
+
+let n3=n1;
+n1=n2;
+n2=n3;
+console.log(n1);
+console.log(n2);
 
 
