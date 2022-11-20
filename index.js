@@ -175,12 +175,23 @@
 // }
 
 
-//for of loop only for array
-//array
-let arr=["red" , "brown","blue"];
-for(let index of arr){
-    console.log(index);
-}
+// //for of loop only for array
+// //array
+// let arr=["red" , "brown","blue"];
+// for(let index of arr){
+//     console.log(index);
+// }
 
+//break and coninue
+//for 
+for(let i=0;i<5;i++){
+    if(i==2) break;
+    console.log('hello  '+ i);
+}
+//for 
+for(let i=0;i<5;i++){
+    if(i==2) continue;
+    console.log('hello  '+ i);
+}
 
 
