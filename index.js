@@ -159,17 +159,28 @@
 // }while(j<5);
 
 
-//for in loop
-//object
-const car ={
-    model:2020,
-    brand:'audi'
-};
-for (const key in car) {
-    console.log(key , car[key])
-}
+// //for in loop
+// //object
+// const car ={
+//     model:2020,
+//     brand:'audi'
+// };
+// for (const key in car) {
+//     console.log(key , car[key])
+// }
+// //array
+// let arr=["red" , "brown","blue"];
+// for(let index in arr){
+//     console.log(index , arr[index]);
+// }
+
+
+//for of loop only for array
 //array
 let arr=["red" , "brown","blue"];
-for(let index in arr){
-    console.log(index , arr[index]);
+for(let index of arr){
+    console.log(index);
 }
+
+
+
