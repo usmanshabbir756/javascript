@@ -138,27 +138,38 @@
 // }
 
 
-//loop
-//for 
-for(let i=0;i<5;i++){
-    console.log('hello  '+ i);
+// //loop
+// //for 
+// for(let i=0;i<5;i++){
+//     console.log('hello  '+ i);
+// }
+
+// //while
+// let i=0;
+// while(i<5){
+//     console.log('hello ' + i);
+//     i++;
+// }
+
+// //do while
+// let j=0;
+// do{
+//     console.log('hello ' + j);
+//     j++;
+// }while(j<5);
+
+
+//for in loop
+//object
+const car ={
+    model:2020,
+    brand:'audi'
+};
+for (const key in car) {
+    console.log(key , car[key])
 }
-
-//while
-let i=0;
-while(i<5){
-    console.log('hello ' + i);
-    i++;
+//array
+let arr=["red" , "brown","blue"];
+for(let index in arr){
+    console.log(index , arr[index]);
 }
-
-//do while
-let j=0;
-do{
-    console.log('hello ' + j);
-    j++;
-}while(j<5);
-
-
-
-
-
