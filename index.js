@@ -107,17 +107,34 @@
 
 // control flow
 
-//if-else
-// 6am to 12pm "good morning"
-// 1pm to 6pm "good afternoon"
-// else "good evening"
-let hour=20;
-if(hour>=6 && hour<12){
-console.log("good morning");
+// //if-else
+// // 6am to 12pm "good morning"
+// // 1pm to 6pm "good afternoon"
+// // else "good evening"
+// let hour=20;
+// if(hour>=6 && hour<12){
+// console.log("good morning");
+// }
+// else if(hour>=12 && hour<=18){
+// console.log("good afternoon")
+// }
+// else{
+// console.log("good evening")
+// }
+
+
+//Switch case
+let role = 'guest';
+switch(role){
+    case ('guest'):
+    console.log('Guest user');
+    break;
+    case ('moderator'):
+    console.log('moderator user');
+    break;
+    default:
+    console.log('Unknoown user');
+
 }
-else if(hour>=12 && hour<=18){
-console.log("good afternoon")
-}
-else{
-console.log("good evening")
-}
+
+
