@@ -123,18 +123,42 @@
 // }
 
 
-//Switch case
-let role = 'guest';
-switch(role){
-    case ('guest'):
-    console.log('Guest user');
-    break;
-    case ('moderator'):
-    console.log('moderator user');
-    break;
-    default:
-    console.log('Unknoown user');
+// //Switch case
+// let role = 'guest';
+// switch(role){
+//     case ('guest'):
+//     console.log('Guest user');
+//     break;
+//     case ('moderator'):
+//     console.log('moderator user');
+//     break;
+//     default:
+//     console.log('Unknoown user');
 
+// }
+
+
+//loop
+//for 
+for(let i=0;i<5;i++){
+    console.log('hello  '+ i);
 }
+
+//while
+let i=0;
+while(i<5){
+    console.log('hello ' + i);
+    i++;
+}
+
+//do while
+let j=0;
+do{
+    console.log('hello ' + j);
+    j++;
+}while(j<5);
+
+
+
 
 
