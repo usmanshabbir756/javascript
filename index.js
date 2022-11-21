@@ -194,15 +194,36 @@
 //     console.log('hello  '+ i);
 // }
 
-//Maximum number
-let f=max(3,15);
-console.log(f);
-function max(a,b){
-    return (a>b) ? a : b ;
-    // if(a>b)
-    // return a;
-    // else
-    // return b;
+// //Maximum number
+// let f=max(3,15);
+// console.log(f);
+// function max(a,b){
+//     return (a>b) ? a : b ;
+//     // if(a>b)
+//     // return a;
+//     // else
+//     // return b;
+// }
+
+
+// fizz buzz
+function fizz(input){
+    if(typeof input!=='number'){
+       return "Not a number";
+    }
+    if(input%3===0  && input%5===0){
+        return "FizzBuzz";
+    }
+    if(input%3===0){
+        return "Fizz";
+    }
+    if(input%5===0){
+        return "Buzz";
+    }  
+    
+    return input;
 }
+let a=fizz(7);
+console.log(a);
 
 
