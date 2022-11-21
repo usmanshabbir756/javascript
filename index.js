@@ -182,16 +182,27 @@
 //     console.log(index);
 // }
 
-//break and coninue
-//for 
-for(let i=0;i<5;i++){
-    if(i==2) break;
-    console.log('hello  '+ i);
-}
-//for 
-for(let i=0;i<5;i++){
-    if(i==2) continue;
-    console.log('hello  '+ i);
+// //break and coninue
+// //for 
+// for(let i=0;i<5;i++){
+//     if(i==2) break;
+//     console.log('hello  '+ i);
+// }
+// //for 
+// for(let i=0;i<5;i++){
+//     if(i==2) continue;
+//     console.log('hello  '+ i);
+// }
+
+//Maximum number
+let f=max(3,15);
+console.log(f);
+function max(a,b){
+    return (a>b) ? a : b ;
+    // if(a>b)
+    // return a;
+    // else
+    // return b;
 }
 
 
