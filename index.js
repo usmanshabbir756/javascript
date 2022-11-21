@@ -227,26 +227,33 @@
 // console.log(a);
 
 
-//Speed limit
-function checkSpeed(speed){
-    const speedLimit=70;
-    const kmHr=5;
-    if(speed<speedLimit+kmHr){
-        console.log("ok")
+// //Speed limit
+// function checkSpeed(speed){
+//     const speedLimit=70;
+//     const kmHr=5;
+//     if(speed<speedLimit+kmHr){
+//         console.log("ok")
+//     }
+//     else
+//     {
+//         let n=speed-speedLimit;
+//         let p= Math.floor(n/kmHr);
+//         if(p>12){
+//             console.log("Licence suspended");
+//         }
+//         else{
+//             console.log("Points: "+ p);
+//         }
+//        }
+// }
+
+// checkSpeed(70);
+
+//even odd
+function evenOdd(limit){
+    for(let i=0;i<=limit;i++){
+        const message=(i%2==0)? 'Even':'Odd';
+        console.log(i,message);
     }
-    else
-    {
-        let n=speed-speedLimit;
-        let p= Math.floor(n/kmHr);
-        if(p>12){
-            console.log("Licence suspended");
-        }
-        else{
-            console.log("Points: "+ p);
-        }
-       }
 }
-
-checkSpeed(70);
-
-
+evenOdd(10);
