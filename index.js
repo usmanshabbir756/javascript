@@ -206,24 +206,47 @@
 // }
 
 
-// fizz buzz
-function fizz(input){
-    if(typeof input!=='number'){
-       return "Not a number";
-    }
-    if(input%3===0  && input%5===0){
-        return "FizzBuzz";
-    }
-    if(input%3===0){
-        return "Fizz";
-    }
-    if(input%5===0){
-        return "Buzz";
-    }  
+// // fizz buzz
+// function fizz(input){
+//     if(typeof input!=='number'){
+//        return "Not a number";
+//     }
+//     if(input%3===0  && input%5===0){
+//         return "FizzBuzz";
+//     }
+//     if(input%3===0){
+//         return "Fizz";
+//     }
+//     if(input%5===0){
+//         return "Buzz";
+//     }  
     
-    return input;
+//     return input;
+// }
+// let a=fizz(7);
+// console.log(a);
+
+
+//Speed limit
+function checkSpeed(speed){
+    const speedLimit=70;
+    const kmHr=5;
+    if(speed<speedLimit+kmHr){
+        console.log("ok")
+    }
+    else
+    {
+        let n=speed-speedLimit;
+        let p= Math.floor(n/kmHr);
+        if(p>12){
+            console.log("Licence suspended");
+        }
+        else{
+            console.log("Points: "+ p);
+        }
+       }
 }
-let a=fizz(7);
-console.log(a);
+
+checkSpeed(70);
 
 
