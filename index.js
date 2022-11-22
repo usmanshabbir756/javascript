@@ -249,11 +249,26 @@
 
 // checkSpeed(70);
 
-//even odd
-function evenOdd(limit){
-    for(let i=0;i<=limit;i++){
-        const message=(i%2==0)? 'Even':'Odd';
-        console.log(i,message);
+// //even odd
+// function evenOdd(limit){
+//     for(let i=0;i<=limit;i++){
+//         const message=(i%2==0)? 'Even':'Odd';
+//         console.log(i,message);
+//     }
+// }
+// evenOdd(10);
+
+
+// truthy value in array
+
+const arr=[0,null,undefined,1,2,3,6];
+console.log(countTruthy(arr));
+
+function countTruthy(array){
+    let count=0;
+    for (const value of array) {
+        if(value)count++;
     }
+    return count;
 }
-evenOdd(10);
+
