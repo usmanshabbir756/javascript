@@ -259,16 +259,33 @@
 // evenOdd(10);
 
 
-// truthy value in array
+// // truthy value in array
 
-const arr=[0,null,undefined,1,2,3,6];
-console.log(countTruthy(arr));
+// const arr=[0,null,undefined,1,2,3,6];
+// console.log(countTruthy(arr));
 
-function countTruthy(array){
-    let count=0;
-    for (const value of array) {
-        if(value)count++;
+// function countTruthy(array){
+//     let count=0;
+//     for (const value of array) {
+//         if(value)count++;
+//     }
+//     return count;
+// }
+
+
+//string in object
+let movie={
+    name:'my world',
+    year:2022,
+    genera:'action'
+};
+StrigFinder(movie);
+function StrigFinder(m){
+    for (const key in m) {
+        if (typeof m[key]=='string') {
+            console.log(key +' : '+ m[key]);
+            
+        }
     }
-    return count;
 }
 
