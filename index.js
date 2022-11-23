@@ -302,24 +302,34 @@
 //     return sum1;
 // }
 
-// grade calculator
-let marks=[80,80,50];
-console.log(gradeCal(marks));
-function gradeCal(marks){
-    let avg=average(marks);
-    if(avg<60) return 'F';
-    if(avg<70) return 'D';
-    if(avg<80) return 'C';
-    if(avg<90) return 'B';
-    if(avg<=100) return 'A';
-}
-function average(marks){
-    let sum=0;
-    for (const iterator of marks) {
-        sum += iterator; 
+// // grade calculator
+// let marks=[80,80,50];
+// console.log(gradeCal(marks));
+// function gradeCal(marks){
+//     let avg=average(marks);
+//     if(avg<60) return 'F';
+//     if(avg<70) return 'D';
+//     if(avg<80) return 'C';
+//     if(avg<90) return 'B';
+//     if(avg<=100) return 'A';
+// }
+// function average(marks){
+//     let sum=0;
+//     for (const iterator of marks) {
+//         sum += iterator; 
+//     }
+//     let avg=sum/marks.length;
+//     return avg;
+// }
+
+//star task
+star(5);
+function star(row){
+    for(let i=0;i<row;i++){
+        let a='';
+        for(let j=0;j<=i;j++){
+            a+='*';
+        }
+        console.log(a);
     }
-    let avg=sum/marks.length;
-    return avg;
 }
-
-
