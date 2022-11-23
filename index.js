@@ -273,19 +273,32 @@
 // }
 
 
-//string in object
-let movie={
-    name:'my world',
-    year:2022,
-    genera:'action'
-};
-StrigFinder(movie);
-function StrigFinder(m){
-    for (const key in m) {
-        if (typeof m[key]=='string') {
-            console.log(key +' : '+ m[key]);
+// //string in object
+// let movie={
+//     name:'my world',
+//     year:2022,
+//     genera:'action'
+// };
+// StrigFinder(movie);
+// function StrigFinder(m){
+//     for (const key in m) {
+//         if (typeof m[key]=='string') {
+//             console.log(key +' : '+ m[key]);
             
+//         }
+//     }
+// }
+
+
+//sum of multiple of 3 and 5
+console.log(sum(10));
+function sum(n){
+    let sum1=0;
+    for(let i=0;i<=n;i++){
+        if(i%3==0 || i%5==0){
+            sum1=sum1+i;
         }
     }
+    return sum1;
 }
 
