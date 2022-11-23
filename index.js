@@ -290,15 +290,36 @@
 // }
 
 
-//sum of multiple of 3 and 5
-console.log(sum(10));
-function sum(n){
-    let sum1=0;
-    for(let i=0;i<=n;i++){
-        if(i%3==0 || i%5==0){
-            sum1=sum1+i;
-        }
-    }
-    return sum1;
+// //sum of multiple of 3 and 5
+// console.log(sum(10));
+// function sum(n){
+//     let sum1=0;
+//     for(let i=0;i<=n;i++){
+//         if(i%3==0 || i%5==0){
+//             sum1=sum1+i;
+//         }
+//     }
+//     return sum1;
+// }
+
+// grade calculator
+let marks=[80,80,50];
+console.log(gradeCal(marks));
+function gradeCal(marks){
+    let avg=average(marks);
+    if(avg<60) return 'F';
+    if(avg<70) return 'D';
+    if(avg<80) return 'C';
+    if(avg<90) return 'B';
+    if(avg<=100) return 'A';
 }
+function average(marks){
+    let sum=0;
+    for (const iterator of marks) {
+        sum += iterator; 
+    }
+    let avg=sum/marks.length;
+    return avg;
+}
+
 
