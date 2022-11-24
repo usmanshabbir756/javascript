@@ -322,14 +322,35 @@
 //     return avg;
 // }
 
-//star task
-star(5);
-function star(row){
-    for(let i=0;i<row;i++){
-        let a='';
-        for(let j=0;j<=i;j++){
-            a+='*';
+// //star task
+// star(5);
+// function star(row){
+//     for(let i=0;i<row;i++){
+//         let a='';
+//         for(let j=0;j<=i;j++){
+//             a+='*';
+//         }
+//         console.log(a);
+//     }
+// }
+
+//prime number function'
+
+prime(100);
+
+function prime(limit){
+    let a=0;
+    for(let i=2;i<=limit;i++){
+        for(let j=1;j<=i;j++){
+            if(i%j==0){
+                a++;
+            }
         }
-        console.log(a);
+        if(a==2){
+            console.log(i);
+            a=0;
+        }
+        a=0;
     }
 }
+
