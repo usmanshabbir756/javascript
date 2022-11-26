@@ -334,23 +334,74 @@
 //     }
 // }
 
-//prime number function'
+// //prime number function'
 
-prime(100);
+// prime(100);
 
-function prime(limit){
-    let a=0;
-    for(let i=2;i<=limit;i++){
-        for(let j=1;j<=i;j++){
-            if(i%j==0){
-                a++;
-            }
-        }
-        if(a==2){
-            console.log(i);
-            a=0;
-        }
-        a=0;
+// function prime(limit){
+//     let a=0;
+//     for(let i=2;i<=limit;i++){
+//         for(let j=1;j<=i;j++){
+//             if(i%j==0){
+//                 a++;
+//             }
+//         }
+//         if(a==2){
+//             console.log(i);
+//             a=0;
+//         }
+//         a=0;
+//     }
+// }
+
+
+
+
+//square length width area()
+
+
+let square = {
+    length:2,
+    w:2,
+    // sq:function(){
+    //     console.log(this.length*2);
+    // }
+    sq(){
+        console.log(this.length*2);
     }
-}
+
+};
+square.sq();
+console.log(square.length)
+
+
+// //2nd method Factory fuction
+// function createSquare(){
+//     return {
+//         length:2,
+//         // sq:function(){
+//         //     console.log(this.length*2);
+//         // }
+//         sq(){
+//             console.log(this.length*2);
+//         }
+    
+//     };
+// }
+// let sqa=createSquare();
+// sqa.sq();
+
+// //constructor function
+// function CreateSquare(l){
+//     this.l=l;
+//     this.sq=function(){
+//         console.log(this.l*2);
+//     }
+// }
+
+// let s1=new CreateSquare(3);
+// let s2=new CreateSquare(4);
+// s1.sq();
+// s2.sq();
+
 
