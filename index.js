@@ -390,9 +390,31 @@
 // s2.sq();
 
 
-//Object Functions
+
+// //Object Functions
+
+// let square = {
+//     length:2,
+//     w:4,
+//     sq(){
+//         console.log(this.length*2);
+//     }
+// };
+
+// for (const key in square) {
+//     console.log(key, square[key]) 
+// }
+
+// for (const key of Object.keys(square)) {
+//     console.log(key,square[key])
+// }
+
+// for (const key of Object.entries(square)) {
+//     console.log(key)
+// }
 
 
+//cloning of Object
 let square = {
     length:2,
     w:4,
@@ -400,15 +422,18 @@ let square = {
         console.log(this.length*2);
     }
 };
-
+//clonig with for in loop
+const another={};
 for (const key in square) {
-    console.log(key, square[key]) 
+    another[key]=square[key]
 }
+console.log(another)
 
-for (const key of Object.keys(square)) {
-    console.log(key,square[key])
-}
+// by object.assign method
+const another1=Object.assign({},square);
+console.log(another1);
 
-for (const key of Object.entries(square)) {
-    console.log(key)
-}
+// spread operator
+const another2={...square};
+console.log(another2);
+
