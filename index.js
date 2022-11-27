@@ -357,39 +357,24 @@
 
 
 
-//square length width area()
+// //square length width area()
 
 
-let square = {
-    length:2,
-    w:2,
-    // sq:function(){
-    //     console.log(this.length*2);
-    // }
-    sq(){
-        console.log(this.length*2);
-    }
+// let square = {
+//     length:2,
+//     w:2,
+//     // sq:function(){
+//     //     console.log(this.length*2);
+//     // }
+//     sq(){
+//         console.log(this.length*2);
+//     }
 
-};
-square.sq();
-console.log(square.length)
+// };
+// square.sq();
+// console.log(square.length);
 
 
-// //2nd method Factory fuction
-// function createSquare(){
-//     return {
-//         length:2,
-//         // sq:function(){
-//         //     console.log(this.length*2);
-//         // }
-//         sq(){
-//             console.log(this.length*2);
-//         }
-    
-//     };
-// }
-// let sqa=createSquare();
-// sqa.sq();
 
 // //constructor function
 // function CreateSquare(l){
@@ -405,3 +390,25 @@ console.log(square.length)
 // s2.sq();
 
 
+//Object Functions
+
+
+let square = {
+    length:2,
+    w:4,
+    sq(){
+        console.log(this.length*2);
+    }
+};
+
+for (const key in square) {
+    console.log(key, square[key]) 
+}
+
+for (const key of Object.keys(square)) {
+    console.log(key,square[key])
+}
+
+for (const key of Object.entries(square)) {
+    console.log(key)
+}
